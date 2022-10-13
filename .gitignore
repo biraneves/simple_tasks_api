@@ -131,3 +131,6 @@ dist
 
 # asdf
 .tool-versions
+
+# database
+simple_tasks.sqlite
