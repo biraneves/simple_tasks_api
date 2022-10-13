@@ -11,4 +11,10 @@ module.exports = {
             },
         },
     },
+    jwt: {
+        secret: 'S1mple-T@$k-AP1',
+        options: {
+            session: false,
+        },
+    },
 };
