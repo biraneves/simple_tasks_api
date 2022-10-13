@@ -8,6 +8,7 @@
     },
     "author": "Ubirajara Neves",
     "dependencies": {
+        "bcrypt": "^5.1.0",
         "body-parser": "^1.20.1",
         "consign": "^0.1.6",
         "dotenv": "^16.0.3",
