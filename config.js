@@ -1,3 +1,5 @@
+const process = require('process');
+
 module.exports = {
     db: {
         database: 'simple_tasks',
@@ -12,7 +14,7 @@ module.exports = {
         },
     },
     jwt: {
-        secret: 'S1mple-T@$k-AP1',
+        secret: process.env.JWT_SECRET,
         options: {
             session: false,
         },
