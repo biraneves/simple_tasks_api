@@ -1,22 +1,4 @@
 const process = require('process');
+const env = process.env.NODE_ENV || 'development';
 
-module.exports = {
-    db: {
-        database: 'simple_tasks',
-        username: '',
-        password: '',
-        params: {
-            dialect: 'sqlite',
-            storage: 'simple_tasks.sqlite',
-            define: {
-                underscored: true,
-            },
-        },
-    },
-    jwt: {
-        secret: process.env.JWT_SECRET,
-        options: {
-            session: false,
-        },
-    },
-};
+module.exports = require(`./config/${env}.js`);
